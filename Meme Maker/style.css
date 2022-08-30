@@ -73,3 +73,19 @@ input#text{
   border-radius: 10px;
   background-color: white;
 }
+#text-size{
+   /* 모든 css 삭제 */
+   all: unset; 
+   padding: 10px 0px;
+   text-align: center;
+   font-weight: 500;
+   border-radius: 10px;
+   background-color: white;
+}
+#text-size::placeholder{
+  color: #999;
+}
+#text-size::-webkit-outer-spin-button,
+#text-size::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
