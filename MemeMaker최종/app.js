@@ -11,7 +11,7 @@ const eraserBtn = document.getElementById("eraser-btn");
 const fileInput = document.getElementById("file");
 const textInput = document.getElementById("text");
 const saveBtn = document.getElementById("save");
-const textSize = document.getElementById("text-size");
+
 const CANVAS_WIDTH = 800;
 const CANVAS_HEIGHT = 800;
 
@@ -98,7 +98,7 @@ function onFilechange(event) {
 
 function onDoubleClick(event) {
   const text = textInput.value;
-  const fontSize = textSize.value
+  const fontSize = lineWidth.value
   if (text !== "") {
     ctx.save(); //ctx의 현재값을 저장한다.
     ctx.lineWidth = 1;
